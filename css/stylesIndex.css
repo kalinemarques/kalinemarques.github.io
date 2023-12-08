@@ -1,0 +1,72 @@
+body {
+    font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
+     /* max-width: 1300px; Define a largura máxima desejada */
+    margin: auto; /* Centraliza horizontalmente o conteúdo */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    font-style: normal;
+    background-image: url('../imagens/estrelas\ 2.jpeg');
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
+    color: transparent; /* Tornar o texto transparente para que o gradiente apareça */
+    text-align: center;
+}
+.gradient-title {
+    background-image: linear-gradient(to right,rgb(219, 145, 157), pink ); /* Gradiente de cores */
+    background-clip: text; /* Aplicar o gradiente apenas ao texto */
+    -webkit-background-clip: text; /* Navegadores Webkit (Safari, Chrome) */
+    display: inline-block; /* Manter o tamanho do elemento inline */
+}
+
+li{
+    background-color: pink;
+    display: inline-block;
+    padding-inline: 50px;
+    font-size: x-large;
+    transition: background-color 0.3s ease; 
+
+}
+li:hover{
+    border: 1px solid;
+    display: inline-block;
+    background-color: rgb(161, 101, 177);
+}    
+a:link{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+nav {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    
+}
+.sem-icone {
+    list-style-type: none;
+}
+
+img{
+    border-radius: 50%;
+}
+body .link-color {
+    color:pink; /* ou qualquer outra cor desejada */
+}
+nav {
+    text-align:center;
+}
+
+nav{
+
+    background-size: cover; /* Para cobrir todo o cabeçalho */
+    background-position: center; /* Centralizar a imagem */
+    color: white; /* Cor do texto, ajuste conforme necessário para contraste */
+    padding: 20px; /* Adicione algum espaçamento interno para melhor legibilidade */
+}

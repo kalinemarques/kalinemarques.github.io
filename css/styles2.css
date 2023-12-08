@@ -41,5 +41,6 @@ img{
     border-radius: 50%;
 }
 body .link-color {
-    color:pink; /* ou qualquer outra cor desejada */
+    color:pink;
+    text-decoration: none;
 }

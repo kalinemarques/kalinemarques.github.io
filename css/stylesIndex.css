@@ -24,7 +24,8 @@ li{
     display: inline-block;
     padding-inline: 50px;
     font-size: x-large;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
+    text-align: center; 
 
 }
 li:hover{
@@ -61,12 +62,9 @@ body .link-color {
     color:pink;
     text-decoration: none;
 }
-nav {
-    text-align:center;
-}
 
 nav{
-
+    text-align:center;
     background-size: cover; /* Para cobrir todo o cabeçalho */
     background-position: center; /* Centralizar a imagem */
     color: white; /* Cor do texto, ajuste conforme necessário para contraste */

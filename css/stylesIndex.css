@@ -26,7 +26,6 @@ li{
     font-size: x-large;
     transition: background-color 0.3s ease;
     text-align: center; 
-
 }
 li:hover{
     border: 1px solid;
@@ -49,7 +48,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px;
-    
 }
 .sem-icone {
     list-style-type: none;
@@ -58,6 +56,7 @@ nav {
 img{
     border-radius: 50%;
 }
+
 body .link-color {
     color:pink;
     text-decoration: none;

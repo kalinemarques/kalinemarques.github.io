@@ -4,7 +4,7 @@ body {
     margin: auto; /* Centraliza horizontalmente o conteúdo */
     padding: 20px; /* Adiciona um espaçamento interno */
     font-style: normal;
-    background-image: url('https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA15417.jpg');
+    background-image: url('../imagens/background.jpg');
 }
 
 h1 {

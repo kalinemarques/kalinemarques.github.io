@@ -1,104 +1,95 @@
 *{
     padding: 0%;
-    margin: 0%
+    margin: 0%;
 }
 
 :root{
     --corPrincipal: aliceblue;
-    --corSecundaria:pink;
-    --corTerciaria: rgb(219, 145, 157);
-    --corAnimacao:magenta;
+    --corSecundaria:rgb(219, 145, 157);
+    --corTerciaria: white;
+    --corAnimacao: #797878;
 }
 
 body {
     font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
      /* max-width: 1300px; Define a largura máxima desejada */
-    margin: auto; /* Centraliza horizontalmente o conteúdo */
-    padding: 20px; /* Adiciona um espaçamento interno */
-    font-style: normal;
-   /* background-image: url('../imagens/background.jpg');*/
+   font-style: normal;
+    /*background-image: url('../imagens/background.jpg');*/
+    color: var(--corPrincipal);
 }
 
-h1 {
+h1{
+    color: var(--corSecundaria);
     font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
-    color: var(--corSecundaria); /* Tornar o texto transparente para que o gradiente apareça */;
-}
-.gradient-title {
-    background-image: linear-gradient(to right,--corTerciaria, pink ); /* Gradiente de cores */
-    background-clip: text; /* Aplicar o gradiente apenas ao texto */
-    -webkit-background-clip: text; /* Navegadores Webkit (Safari, Chrome) */
-    display: inline-block; /* Manter o tamanho do elemento inline */
 }
 
-li{
-    background-color: pink;
-    display: inline-block;
-    padding-inline: 50px;
-    font-size: x-large;
-    transition: background-color 0.3s ease;
-    text-align: center; 
-}
-li:hover{
-    border: 1px solid;
-    display: inline-block;
-    background-color: rgb(161, 101, 177);
-}
- .cabecalho{
+.cabecalho{
     display: flex;
+    flex-direction: row;
+    background-color: var(--corPrincipal);
+}
+
+.cabecalho-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.cabecalho-menu{
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     flex-grow: 4;
     height: 12vh;
 }
+
 .content{
     width: 100vw;
-    height: 615.5xp;
-    background-color: var(--corSecundaria);
+    height: 615.5px;
+    background-color: var(--corTerciaria);
     color: var(--corPrincipal);
 }
+
 .rodape{
     width: 100vw;
-    height: 35xp;
+    height: 35px;
     background-color: var(--corPrincipal);
     color: var(--corSecundaria);
+    text-align: center;
 }
-a{
+
+a {
     margin: 0 2vw 1vw;
     text-decoration: none;
     font-size: large;
 }
-a:visited{
-    color: var(--corSecundaria);
-    text-decoration: none;
-}
-a:hover{
-    color: var(--corSecundaria);
-    text-decoration: none;
+.cabecalho a:hover{
+    color: var(--corAnimacao);
 }
 a:link{
     color: var(--corSecundaria);
-    text-decoration: none;
+}
+a:visited{
+    color: var(--corSecundaria);
 }
 a:active{
-    color: var(--corSecundaria);
-    text-decoration: none;
-}
-nav {
-    position: relative;
-    bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    
-}
-.sem-icone {
-    list-style-type: none;
+    color: var(--corSecundaria)
 }
 
-img{
-    border-radius: 50%;
+@media(max-width:720px){
+    .cabecalho-logo{
+        display: none;
+    }
+    .cabecalho-menu{
+        justify-content: center;
+    }
 }
-body .link-color {
-    color:pink;
-    text-decoration: none;
+@media(max-width:320px){
+    .cabecalho-logo{
+        display: none;
+    }
+    .cabecalho-menu{
+        flex-direction: column;
+    }
 }

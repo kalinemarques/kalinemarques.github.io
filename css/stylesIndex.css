@@ -2,14 +2,12 @@
     padding: 0%;
     margin: 0%;
 }
-
 :root{
     --corPrincipal: aliceblue;
     --corSecundaria:rgb(219, 145, 157);
     --corTerciaria: white;
     --corAnimacao: #797878;
 }
-
 body {
     font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
      /* max-width: 1300px; Define a largura máxima desejada */
@@ -17,25 +15,21 @@ body {
     /*background-image: url('../imagens/background.jpg');*/
     color: var(--corPrincipal);
 }
-
 h1{
     color: var(--corSecundaria);
     font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
 }
-
 .cabecalho{
     display: flex;
     flex-direction: row;
     background-color: var(--corPrincipal);
 }
-
 .cabecalho-logo{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
 }
-
 .cabecalho-menu{
     display: flex;
     justify-content: flex-end;
@@ -43,14 +37,12 @@ h1{
     flex-grow: 4;
     height: 12vh;
 }
-
 .content{
     width: 100vw;
     height: 615.5px;
     background-color: var(--corTerciaria);
     color: var(--corPrincipal);
 }
-
 .rodape{
     width: 100vw;
     height: 35px;
@@ -58,7 +50,6 @@ h1{
     color: var(--corSecundaria);
     text-align: center;
 }
-
 a {
     margin: 0 2vw 1vw;
     text-decoration: none;

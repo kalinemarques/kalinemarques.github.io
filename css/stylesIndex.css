@@ -1,19 +1,30 @@
+*{
+    padding: 0%;
+    margin: 0%
+}
+
+:root{
+    --corPrincipal: aliceblue;
+    --corSecundaria:pink;
+    --corTerciaria: rgb(219, 145, 157);
+    --corAnimacao:magenta;
+}
+
 body {
     font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
      /* max-width: 1300px; Define a largura máxima desejada */
     margin: auto; /* Centraliza horizontalmente o conteúdo */
     padding: 20px; /* Adiciona um espaçamento interno */
     font-style: normal;
-    background-image: url('../imagens/background.jpg');
+   /* background-image: url('../imagens/background.jpg');*/
 }
 
 h1 {
     font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
-    color: transparent; /* Tornar o texto transparente para que o gradiente apareça */
-    text-align: center;
+    color: var(--corSecundaria); /* Tornar o texto transparente para que o gradiente apareça */;
 }
 .gradient-title {
-    background-image: linear-gradient(to right,rgb(219, 145, 157), pink ); /* Gradiente de cores */
+    background-image: linear-gradient(to right,--corTerciaria, pink ); /* Gradiente de cores */
     background-clip: text; /* Aplicar o gradiente apenas ao texto */
     -webkit-background-clip: text; /* Navegadores Webkit (Safari, Chrome) */
     display: inline-block; /* Manter o tamanho do elemento inline */
@@ -31,15 +42,45 @@ li:hover{
     border: 1px solid;
     display: inline-block;
     background-color: rgb(161, 101, 177);
-}    
-a:link{
+}
+ .cabecalho{
+    display: flex;
+    align-items: center;
+    flex-grow: 4;
+    height: 12vh;
+}
+.content{
+    width: 100vw;
+    height: 615.5xp;
+    background-color: var(--corSecundaria);
+    color: var(--corPrincipal);
+}
+.rodape{
+    width: 100vw;
+    height: 35xp;
+    background-color: var(--corPrincipal);
+    color: var(--corSecundaria);
+}
+a{
+    margin: 0 2vw 1vw;
     text-decoration: none;
-    display: inline;
-    color: black;
-    text-decoration: none;
+    font-size: large;
 }
 a:visited{
-    color: black;
+    color: var(--corSecundaria);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--corSecundaria);
+    text-decoration: none;
+}
+a:link{
+    color: var(--corSecundaria);
+    text-decoration: none;
+}
+a:active{
+    color: var(--corSecundaria);
+    text-decoration: none;
 }
 nav {
     position: relative;
@@ -48,6 +89,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px;
+    
 }
 .sem-icone {
     list-style-type: none;
@@ -56,16 +98,7 @@ nav {
 img{
     border-radius: 50%;
 }
-
 body .link-color {
     color:pink;
     text-decoration: none;
-}
-
-nav{
-    text-align:center;
-    background-size: cover; /* Para cobrir todo o cabeçalho */
-    background-position: center; /* Centralizar a imagem */
-    color: white; /* Cor do texto, ajuste conforme necessário para contraste */
-    padding: 20px; /* Adicione algum espaçamento interno para melhor legibilidade */
 }

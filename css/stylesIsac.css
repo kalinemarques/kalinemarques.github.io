@@ -1,0 +1,36 @@
+*{
+    padding: 0%;
+    margin: 0%
+}
+
+:root{
+    --corPrincipal: rgb(29, 65, 194);
+    --corSecundaria:rgb(13, 7, 123);
+    --corTerciaria:blue;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
+     /* max-width: 1300px; Define a largura máxima desejada */
+    margin: auto; /* Centraliza horizontalmente o conteúdo */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    font-style: normal;
+    /*background-image: url('../imagens/background.jpg');*/
+    color: var(--corPrincipal);
+}
+
+h1 {
+    
+    color: var(--corSecundaria); /* Tornar o texto transparente para que o gradiente apareça */;
+}
+.gradient-title {
+    background-image: linear-gradient(to right, --corTerciaria, rgb(192, 203, 255) ); /* Gradiente de cores */
+    background-clip: text; /* Aplicar o gradiente apenas ao texto */
+    -webkit-background-clip: text; /* Navegadores Webkit (Safari, Chrome) */
+    display: inline-block; /* Manter o tamanho do elemento inline */
+}
+
+body .link-color {
+    color:rgb(195, 192, 255);
+    text-decoration: none;
+}

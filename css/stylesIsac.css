@@ -17,6 +17,7 @@ body {
     font-style: normal;
     /*background-image: url('../imagens/background.jpg');*/
     color: var(--corPrincipal);
+    background-color: aliceblue;
 }
 
 h1 {

@@ -1,92 +1,98 @@
 *{
     padding: 0%;
-    margin: 0%
+    margin: 0%;
 }
-
 :root{
     --corPrincipal: aliceblue;
-    --corSecundaria:pink;
-    --corTerciaria: rgb(219, 145, 157);
-    --corAnimacao:magenta;
+    --corSecundaria:rgb(219, 145, 157);
+    --corTerciaria: white;
+    --corNormal: black;
+    --corAnimacao: #797878;
 }
-
 body {
     font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
      /* max-width: 1300px; Define a largura máxima desejada */
-    margin: auto; /* Centraliza horizontalmente o conteúdo */
-    padding: 20px; /* Adiciona um espaçamento interno */
-    font-style: normal;
+   font-style: normal;
     /*background-image: url('../imagens/background.jpg');*/
-    color: var(--corPrincipal);
+    color: var(--corNormal);
 }
-
-h1 {
+h1{
+    color: var(--corSecundaria);
     font-family: 'Noto Sans', sans-serif; /* Usar a fonte Noto Sans */
-    color: var(--corSecundaria); /* Tornar o texto transparente para que o gradiente apareça */;
-}
-.gradient-title {
-    background-image: linear-gradient(to right, --corTerciaria, pink ); /* Gradiente de cores */
-    background-clip: text; /* Aplicar o gradiente apenas ao texto */
-    -webkit-background-clip: text; /* Navegadores Webkit (Safari, Chrome) */
-    display: inline-block; /* Manter o tamanho do elemento inline */
 }
 .cabecalho{
     display: flex;
+    width: 100vw;
+    flex-direction: row;
+    background-color: var(--corPrincipal);
+}
+.cabecalho-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.cabecalho-menu{
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     flex-grow: 4;
     height: 12vh;
 }
-    
 .content{
     width: 100vw;
-    height: 615.5xp;
-    background-color: var(--corSecundaria);
-    color: var(--corPrincipal);
+    height: 606px;
+    background-color: var(--corTerciaria);
 }
 .rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
-    height: 35xp;
+    height: 35px;
     background-color: var(--corPrincipal);
     color: var(--corSecundaria);
+    text-align: center;
 }
-a{
+a {
     margin: 0 2vw 1vw;
     text-decoration: none;
     font-size: large;
 }
-a:visited{
-    color: var(--corSecundaria);
-    text-decoration: none;
-}
-a:hover{
-    color: var(--corSecundaria);
-    text-decoration: none;
+.cabecalho a:hover{
+    color: var(--corAnimacao);
 }
 a:link{
     color: var(--corSecundaria);
-    text-decoration: none;
+}
+a:visited{
+    color: var(--corSecundaria);
 }
 a:active{
-    color: var(--corSecundaria);
-    text-decoration: none;
-}
-nav {
-    position: relative;
-    bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    
-}
-.sem-icone {
-    list-style-type: none;
+    color: var(--corSecundaria)
 }
 
+@media(max-width:720px){
+    .cabecalho-logo{
+        display: none;
+    }
+    .cabecalho-menu{
+        justify-content: center;
+    }
+}
+@media(max-width:320px){
+    .cabecalho-logo{
+        display: none;
+    }
+    .cabecalho-menu{
+        flex-direction: column;
+    }
+}
 img{
     border-radius: 50%;
 }
 body .link-color {
+    margin: 0 0vw 0vw;
     color:pink;
     text-decoration: none;
 }

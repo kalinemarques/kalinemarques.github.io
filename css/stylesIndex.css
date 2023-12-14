@@ -21,6 +21,7 @@ h1{
 }
 .cabecalho{
     display: flex;
+    width: 100vw;
     flex-direction: row;
     background-color: var(--corPrincipal);
 }
@@ -39,11 +40,14 @@ h1{
 }
 .content{
     width: 100vw;
-    height: 615.5px;
+    height: 606px;
     background-color: var(--corTerciaria);
     color: var(--corPrincipal);
 }
 .rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 35px;
     background-color: var(--corPrincipal);
@@ -56,7 +60,7 @@ a {
     font-size: large;
 }
 .cabecalho a:hover{
-    color: var(--corAnimacao);
+    border-bottom: solid sandybrown;
 }
 a:link{
     color: var(--corSecundaria);
